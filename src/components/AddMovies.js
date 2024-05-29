@@ -14,7 +14,7 @@ const AddMovies = () => {
                                 <input type="text" placeholder="Movie Name" className="input input-bordered w-full max-w-xs m-2" />
                                 <input type="text" placeholder="Movie Description" className="input input-bordered w-full max-w-xs m-2" />
                             </div>
-                            <button class="btn btn-neutral">Submit</button>
+                            <button className="btn btn-neutral">Submit</button>
                             </form>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import React from "react";
-
-const MovieCard = ({title, description,posterURL,rating}) => {
+import { Link } from "react-router-dom";
+const MovieCard = ({id, title, description,posterURL,rating}) => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl h-[63vh] m-5">
       <figure>
@@ -13,6 +13,7 @@ const MovieCard = ({title, description,posterURL,rating}) => {
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
+          <button className="btn btn-primary"> <Link to={`detail/${id}`} >See details</Link> </button>
           <button className="btn btn-primary">rate {rating}</button>
         </div>
       </div>
